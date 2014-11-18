@@ -1,5 +1,5 @@
 ---
-  tags: arrays, iteration, hashes, conditionals, nested_structures
+  tags: arrays, iteration, hashes, conditionals, nested_structures, bonus
   languages: ruby
 ---
 
