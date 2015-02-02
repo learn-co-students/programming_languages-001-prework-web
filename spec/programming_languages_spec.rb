@@ -44,7 +44,7 @@ describe '#reformat_languages' do
   end
 
   it 'reformats javascript properly' do
-    rexpect(esult[:javascript][:type]).to eq("interpreted")
+    expect(result[:javascript][:type]).to eq("interpreted")
     [:oo, :functional].each { |v| expect(result[:javascript][:style]).to include(v) }
   end
 
