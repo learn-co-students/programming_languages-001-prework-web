@@ -1,6 +1,7 @@
 ---
 tags: arrays, iteration, hashes, conditionals, nested_structures, bonus
 languages: ruby
+resources: 6
 ---
 
 # Nested Data Structures Practice
