@@ -8,6 +8,8 @@ resources: 6
 
 ### Skills: iteration, arrays, hashes, conditionals, nested data structures
 
+You should be using `each`, `while` and other iterators to solve this lab.
+
 ## Instructions
 
 You are given a hash where the keys are the styles of the languages and the values are also hashes. These nested hashes have a key of the name of the language and value of the languages attributes, which is also a hash. These inner-most hashes have keys, value pairs of type and type value. Take a look:
