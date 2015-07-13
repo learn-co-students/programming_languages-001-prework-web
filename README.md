@@ -1,21 +1,14 @@
----
-tags: arrays, iteration, hashes, conditionals, nested_structures, bonus
-languages: ruby
-resources: 6
----
+# Nested Data Structures Practice: Iterating and Manipulating
 
-# Nested Data Structures Practice
-
-### Skills: iteration, arrays, hashes, conditionals, nested data structures
-
-You should be using `each`, `while` and other iterators to solve this lab.
 
 ## Instructions
 
-You are given a hash where the keys are the styles of the languages and the values are also hashes. These nested hashes have a key of the name of the language and value of the languages attributes, which is also a hash. These inner-most hashes have keys, value pairs of type and type value. Take a look:
+In this lab, you'll be coding your solution in `programming_languages.rb`. The `reformat_languages` method takes in an argument of `languages` and the test suite will call it with an argument of the below hash:
+
+ are given a hash where the keys are the styles of the languages and the values are also hashes. These nested hashes have a key of the name of the language and value of the languages attributes, which is also a hash. These inner-most hashes have keys, value pairs of type and type value. Take a look:
 
 ```ruby
-{
+languages = {
   :oo => {
     :ruby => {
       :type => "interpreted"
@@ -48,7 +41,11 @@ You are given a hash where the keys are the styles of the languages and the valu
 }
 ```
 
-Iterate over the hash and insert the language as keys in a new hash along with an array of styles that language is a part of.  It should match the following format:
+This is the hash you will be operating on and reformatting, programmatically––meaning you will not simply re-write the hash in order to get the tests passing. 
+
+**Iterate over the hash and build a new hash that has the languages as keys that point to a value of a hash that describes the type and style**.
+
+ It should match the following format:
 
 ```ruby
 {
@@ -82,6 +79,37 @@ Iterate over the hash and insert the language as keys in a new hash along with a
   }
 }
 ```
+
+### Tips: 
+
+* Start by setting a variable, let's call it `new_hash` equal to an empty hash. Throughout your iteration over the `languages` hash, you can then add new key/value pairs to `new_hash`. At the end of your method, return `new_hash`. 
+* Remember that you can create key/value pairs use the `[]=` method on a hash. For example: 
+
+```ruby
+hash = {}
+hash[:my_key] = "my value"
+
+puts hash
+#  => {my_key: "my value"}
+```
+
+What if we want to create a key/value pair where the value is yet another hash?
+
+```ruby
+hash = {}
+hash[:my_key] = {second_level_key: "second level value"}
+
+puts hash
+#  => 
+{
+  my_key: {
+     second_level_key: "second level value"
+  }
+}
+```
+
+* Remember that you can add items to array using the `<<` method. 
+* Remember to use binding.pry to dig into your method and each level of the iteration. Play around with it inside the console. This will help you get the tests passing. 
 
 ## Resources
 
