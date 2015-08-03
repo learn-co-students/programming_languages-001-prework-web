@@ -8,7 +8,7 @@
 
 In this lab, you'll be coding your solution in `programming_languages.rb`. The `reformat_languages` method takes in an argument of `languages` and the test suite will call it with an argument of the below hash:
 
-You are given a hash where the keys are the styles of the languages and the values are also hashes. These nested hashes have a key of the name of the language and value of the languages attributes, which is also a hash. These inner-most hashes have keys, value pairs of type and type value. Take a look:
+You are given a hash where the keys are the styles of the languages and the values are also hashes. These nested hashes have a key of the name of the language and value of the languages attributes, which is also a hash. These inner-most hashes have key/value pairs of type and type value. Take a look:
 
 ```ruby
 languages = {
@@ -86,7 +86,7 @@ This is the hash you will be operating on and reformatting, programmaticallyâ€“â
 ### Tips: 
 
 * Start by setting a variable, let's call it `new_hash` equal to an empty hash. Throughout your iteration over the `languages` hash, you can then add new key/value pairs to `new_hash`. At the end of your method, return `new_hash`. 
-* Remember that you can create key/value pairs use the `[]=` method on a hash. For example: 
+* Remember that you can create key/value pairs by using the `[]=` method on a hash. For example: 
 
 ```ruby
 hash = {}
