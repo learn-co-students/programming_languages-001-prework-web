@@ -41,7 +41,7 @@ def reformat_languages(languages)
         new_hash[name]= data
         new_hash[name][:style]= []
         new_hash[name][:style].push(style)
-        binding.pry
+
       else
         new_hash[name][:style].push(style)
       end
