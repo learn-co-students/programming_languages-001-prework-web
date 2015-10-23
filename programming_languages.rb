@@ -34,21 +34,15 @@ def reformat_languages(languages)
 
   return_hash = {}
 
-  languages.each do |kind, type_hash|
-    type_hash.each do |language, about|
-      return_hash[language] = {:type => about[:type], :style => [kind]}
-    end
-  end
-  languages.each do |kind, type_hash|
-      type_hash.each do |language, about|
-      if return_hash[language][:style][0] != kind
-        return_hash[language][:style].push(kind)
+  languages.each do |kind, names|
+    names.each do |language, data|
+      if !return_hash.has_key?(language)
+        return_hash[language] = data
+        return_hash[language][:style] = [kind]
+      else
+        return_hash[language][:style] << kind
       end
-     
     end
   end
-
-  
-return_hash
-
+  return_hash
 end
