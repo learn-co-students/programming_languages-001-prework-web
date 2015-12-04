@@ -35,7 +35,7 @@ end
 
 
 
-def reformat_languages(langs)
+def rl(langs)
   new_hash = {}
   langs.each do |k,v|
     v.collect do |language, type|
@@ -56,8 +56,3 @@ def reformat_languages(langs)
      new_hash
     
 end
-
-
-
-
-
