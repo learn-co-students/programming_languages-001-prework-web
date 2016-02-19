@@ -1,13 +1,18 @@
-require 'pry'
 
 def reformat_languages(languages)
-  new_hash = {}
-  new_hash[:ruby] = {:type => "interpreted", :style => [:oo]}
-  new_hash[:javascript] = {:type => "interpreted", :style => [:oo, :functional]}
-  new_hash[:python] = {:type => "interpreted", :style => [:oo]}
-  new_hash[:java] = {:type => "compiled", :style => [:oo]}
-  new_hash[:clojure] = {:type => "compiled", :style => [:functional]}
-  new_hash[:erlang] = {:type => "compiled", :style => [:functional]}
-  new_hash[:scala] = {:type => "compiled", :style => [:functional]}
-  new_hash
+  # your code here
+  languages_reformatted = {}
+  languages.each { |style, langs|
+    langs.each { |lang, properties|
+      if languages_reformatted.has_key?(lang)
+        languages_reformatted[lang][:style] << style
+      else
+        languages_reformatted[lang] = {
+          type: properties[:type],
+          style: [style]
+        }
+      end
+    }
+  }
+  languages_reformatted
 end
