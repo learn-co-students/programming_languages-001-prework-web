@@ -2,7 +2,6 @@ def reformat_languages(languages)
   new_hash = {}
 
   languages.each do |programming_style, language_list|
-
     #Fetch language names
     language_list_names = language_list.keys
 
@@ -14,8 +13,6 @@ def reformat_languages(languages)
 
       new_hash[language_name][:style] << programming_style
     end
-
-
   end
 
   new_hash
