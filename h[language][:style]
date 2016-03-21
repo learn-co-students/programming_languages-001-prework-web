@@ -1,0 +1,7 @@
+=> {[33m:ruby[0m=>{[33m:type[0m=>[31m[1;31m"[0m[31minterpreted[1;31m"[0m[31m[0m, [33m:style[0m=>[[33m:oo[0m]},
+ [33m:javascript[0m=>{[33m:type[0m=>[31m[1;31m"[0m[31minterpreted[1;31m"[0m[31m[0m, [33m:style[0m=>[[33m:oo[0m]},
+ [33m:python[0m=>{[33m:type[0m=>[31m[1;31m"[0m[31minterpreted[1;31m"[0m[31m[0m, [33m:style[0m=>[[33m:oo[0m]},
+ [33m:java[0m=>{[33m:type[0m=>[31m[1;31m"[0m[31mcompiled[1;31m"[0m[31m[0m, [33m:style[0m=>[[33m:oo[0m]},
+ [33m:clojure[0m=>{[33m:type[0m=>[31m[1;31m"[0m[31mcompiled[1;31m"[0m[31m[0m, [33m:style[0m=>[[33m:functional[0m]},
+ [33m:erlang[0m=>{[33m:type[0m=>[31m[1;31m"[0m[31mcompiled[1;31m"[0m[31m[0m, [33m:style[0m=>[[33m:functional[0m]},
+ [33m:scala[0m=>{[33m:type[0m=>[31m[1;31m"[0m[31mcompiled[1;31m"[0m[31m[0m, [33m:style[0m=>[[33m:functional[0m]}}
