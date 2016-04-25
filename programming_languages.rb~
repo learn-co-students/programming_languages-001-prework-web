@@ -4,12 +4,10 @@ def reformat_languages(languages)
 	languages.each do |style, language|
 		language.each do |s_l,vals|
 			end_h[s_l] = vals
-			end_h[s_l][:style] = [style]
-			if languages[:oo].key?(s_l) && languages[:functional].key?(s_l)
-				end_h[s_l][:style] = [:oo, :functional]
-			end
+			end_h[:style] = style
 		end
 	end
 	puts end_h
 	return end_h
 end
+reformat_languages
