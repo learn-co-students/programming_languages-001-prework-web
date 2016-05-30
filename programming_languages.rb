@@ -1,6 +1,14 @@
 def reformat_languages(languages)
   newHash = {}
-  newHash[:ruby] = {:type => "interpreted", :style => [:oo]}
-  newHash[:pyhton] = {:type => "interpreted", :style => [:oo]}
+  languages.each do |types, langs|
+    langs.each do |lang, attributes|
+      if newHash.key?(lang)
+        newHash[lang][:style] << types
+      else
+        newHash[lang] = attributes
+        newHash[lang][:style] = [types]
+      end
+    end
+  end
   newHash
 end
